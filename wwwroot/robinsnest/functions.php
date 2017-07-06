@@ -8,7 +8,8 @@ $appname = "Robin's Nest";
 
 $connection = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
 
-if ($connection->connec_error) die($connection->connect_error);
+if ($connection->connect_error) die("connection failed :".$connection->connect_error);
+echo "connect successfully";
 
 function createTable($name, $query)
 {
