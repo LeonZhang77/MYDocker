@@ -1,8 +1,8 @@
 <?php
 
-$servername = "localhost";
-$username = "phpmyadmin";
-$password = "MS173m_QN";
+$dbhost = "localhost";
+$dbuser = "phpmyadmin";
+$dbpass = "MS173m_QN";
 $dbname ="myDB";
 $appname = "Robin's Nest";
 
