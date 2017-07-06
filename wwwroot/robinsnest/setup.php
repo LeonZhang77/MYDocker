@@ -4,9 +4,10 @@
     <title>Setting up database</title>
   </head>
   <body>
-    <h3>Setting up ...</h3>
 
-<?php
+    <h3>Setting up...</h3>
+
+<?php // Example 26-3: setup.php
   require_once 'functions.php';
 
   createTable('members',
@@ -14,7 +15,7 @@
               pass VARCHAR(16),
               INDEX(user(6))');
 
-  createTable('messages',
+  createTable('messages', 
               'id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
               auth VARCHAR(16),
               recip VARCHAR(16),
@@ -39,4 +40,3 @@
     <br>...done.
   </body>
 </html>
-
